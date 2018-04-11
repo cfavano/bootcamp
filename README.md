@@ -1,3 +1,3 @@
-# bootcamp
+# restaurant
 
-Coding lessons/exercises from SW Guild.
+HTML/CSS/Javascript lessons/exercises from SW Guild.
