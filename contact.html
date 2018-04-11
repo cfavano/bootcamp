@@ -1,0 +1,65 @@
+
+<html>
+<head>
+  <title>Contact Us | Cicotti's Restaurant | Denver</title>
+</head>
+
+<body>
+
+  <h1>Cicotti's Restaurant</h1>
+
+  <hr>
+
+  <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;
+  <a href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;
+  <a href="contact.html">Contact Us</a> 
+
+  <hr>
+
+  <form action="submit.html" method="POST">
+    Name: <input type="text" name="name">
+    <br>
+
+    Email: <input type="text" name="email">
+    <br>
+
+    Phone: <input type="text" name="phone">
+    <br>
+    
+    Reason for Inquiry:
+    <select name="inquiry-reason">
+      <option value="Catering" checked>Catering</option>
+      <option value="Private Party">Private Party</option>
+      <option value="Feedback">Feedback</option>
+      <option value="Other">Other</option>
+    </select>
+    <br>
+    
+    Additional Information:<textarea rows="10"></textarea>
+    <br>
+
+    Have you been to the restaurant?
+    <input type="radio" name="visted" value="No" checked>No
+    <input type="radio" name="visted" value="Yes">Yes
+    <br>
+
+    Best days to contact you:
+    <input type="checkbox" name="contact-day" value="M">M
+    <input type="checkbox" name="contact-day" value="T">T
+    <input type="checkbox" name="contact-day" value="W">W
+    <input type="checkbox" name="contact-day" value="Th">TH
+    <input type="checkbox" name="contact-day" value="F">F
+    <br>
+
+    <input type="submit" value="Send Request">
+  </form>
+
+  <hr>
+
+  <footer>
+    <p>10 Platte, Denver, CO 82056</p>
+    <p>(720) 520 5684</p>
+  </footer>
+
+</body>
+</html>
