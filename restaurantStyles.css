@@ -1,0 +1,53 @@
+h1 {
+  font-family: Roboto;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #444;
+}
+
+a:hover { 
+  font-weight: bold;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.container-fluid {
+  background: #f4f1f1;
+}
+
+.container-fluid {
+  padding: 20px 0;
+}
+
+.container-fluid > .row {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+footer {
+  font-size: smaller;
+  text-align: center;
+}
+
+
+.home h2 {
+  font-size: 14px;
+}
+
+.home .description {
+  margin-top: 20px;
+  border: 1px solid #333;
+}

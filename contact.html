@@ -1,65 +1,119 @@
 
 <html>
 <head>
-  <title>Contact Us | Cicotti's Restaurant | Denver</title>
+  <title>Cicciotti's Restaurant Contact Us | Denver, CO </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+  <link rel="stylesheet" href="restaurantStyles.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+  </script>
+  <style>
+
+
+  #main {
+    margin-bottom: 40px;
+  }
+
+  .button {
+    float: right;
+  }
+  </style>
 </head>
 
 <body>
 
-  <h1>Cicotti's Restaurant</h1>
-
+  <div id="logo">
+    <h1>Cicciotti's Restaurant</h1>
+  </div>
   <hr>
-
-  <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;
-  <a href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;
-  <a href="contact.html">Contact Us</a> 
-
+  <div id="nav" class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;
+        <a href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;
+        <a href="contact.html">Contact Us</a> 
+      </div>
+    </div>
+  </div>
   <hr>
+  <div id="main" class="container">
+    <div class="">
+      <div class="">
+        <form action="submit.html" method="POST">
 
-  <form action="submit.html" method="POST">
-    Name: <input type="text" name="name">
-    <br>
+          <div class="form-group row">
+            <label for="name-input" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" name="name">
+            </div>
+          </div>
 
-    Email: <input type="text" name="email">
-    <br>
+          <div class="form-group row">
+            <label for="email-input" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" name="email">
+            </div>
+          </div>
 
-    Phone: <input type="text" name="phone">
-    <br>
-    
-    Reason for Inquiry:
-    <select name="inquiry-reason">
-      <option value="Catering" checked>Catering</option>
-      <option value="Private Party">Private Party</option>
-      <option value="Feedback">Feedback</option>
-      <option value="Other">Other</option>
-    </select>
-    <br>
-    
-    Additional Information:<textarea rows="10"></textarea>
-    <br>
+          <div class="form-group row">
+            <label for="phone-input" class="col-sm-2 col-form-label">Phone</label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" name="phone">
+            </div>
+          </div>
 
-    Have you been to the restaurant?
-    <input type="radio" name="visted" value="No" checked>No
-    <input type="radio" name="visted" value="Yes">Yes
-    <br>
+          <div class="form-group row">
+            <label for="inquiry-input" class="col-sm-2 col-form-label">Reason for Inquiry</label>
+            <div class="col-sm-10">
+              <select name="inquiry-reason" class="form-control">
+                <option value="Catering" checked>Catering</option>
+                <option value="Private Party">Private Party</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
 
-    Best days to contact you:
-    <input type="checkbox" name="contact-day" value="M">M
-    <input type="checkbox" name="contact-day" value="T">T
-    <input type="checkbox" name="contact-day" value="W">W
-    <input type="checkbox" name="contact-day" value="Th">TH
-    <input type="checkbox" name="contact-day" value="F">F
-    <br>
+          <div class="form-group row">
+            <label for="additional-input" class="col-sm-2 col-form-label">Additional information</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" rows="10"></textarea>
+            </div>
+          </div>
 
-    <input type="submit" value="Send Request">
-  </form>
+          <div class="form-group row">
+            <label for="visited-input" class="col-sm-2 col-form-label">Have you been to the restaurant?</label>
+            <div class="col-sm-10">
+              <input type="radio" name="visted" value="No" checked>No
+              <input type="radio" name="visted" value="Yes">Yes
+            </div>
+          </div>
 
-  <hr>
+          <div class="form-group row">
+            <label for="contact-input" class="col-sm-2 col-form-label">  Best days to contact you:</label>
+            <div class="col-sm-10">
+             <input type="checkbox" name="contact-day" value="M">M
+             <input type="checkbox" name="contact-day" value="T">T
+             <input type="checkbox" name="contact-day" value="W">W
+             <input type="checkbox" name="contact-day" value="Th">TH
+             <input type="checkbox" name="contact-day" value="F">F
+           </div>
+         </div>
 
-  <footer>
-    <p>10 Platte, Denver, CO 82056</p>
-    <p>(720) 520 5684</p>
-  </footer>
+         <br>
+
+         <input type="submit" value="Send Request" class="button">
+       </form>
+     </div>
+   </div>
+ </div>
+ <hr>
+
+ <footer>
+  <p>10 Platte, Denver, CO 82056</p>
+  <p>(720) 520 5684</p>
+</footer>
 
 </body>
 </html>
