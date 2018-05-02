@@ -6,25 +6,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="restaurantStyles.css"/>  
   <style>
-  body {
-    background: #FFD194;
-  }
-  h3, p {
-    text-align: center;
-  }
-
-  th {
-    text-align: center;
-  }
-  td {
-    padding: 10px;
-  }
-  table {
-    width: 60%;
-    margin: 0 20%;
-    border: 1px solid #eee;
-    text-align: center;
-  }
+      table {margin: 0 auto;}
   </style>
 </head>
 
@@ -33,10 +15,13 @@
   <div id="logo">
     <h1>Cicciotti's Restaurant</h1>
   </div>
-  <hr>   <div class="container-fluid">
+ 
+
+  <div class="nav-container">
+  <div class="container">
     
-        <div class="col-sm-12">
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="col-sm-12">
+      <nav class="navbar navbar-expand-md navbar-dark">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -54,95 +39,93 @@
         </ul>
       </div>
     </nav>
-    </div></div>
-  <hr>
+    </div></div></div>
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-4">
-        <h3>Burger and Fries</h3>
-        <p>An American Classic!<br>
+      <div class="col-sm">
+        <h3 class="text-center">Burger and Fries</h3>
+        <p class="text-center">An American Classic!<br>
           Your choice - with our without cheese<br>
           Pickle, onion, tomato and lettuce <br>
           Served with our famous thick cut french fries<br>
         </p>
-        <p>$7.95</p>
+        <p class="text-center">$7.95</p>
 
-        <h3>Tenderloin Sandwich and Chips</h3>
-        <p>Really Hits the Spot! <br>
+        <h3 class="text-center">Tenderloin Sandwich and Chips</h3>
+        <p class="text-center">Really Hits the Spot! <br>
           Plain or Sesame Seed Bun<br>
           Pickle, onion, tomato and lettuce <br>
           Served with our house-made chips
         </p>
-        <p>$8.95</p>
+        <p class="text-center">$8.95</p>
       </div>
 
-      <div class="col-sm-4">
-        <h3>Hot Dog and Chips</h3>
-        <p>A Summer Classic!<br>
+      <div class="col-sm">
+        <h3 class="text-center">Hot Dog and Chips</h3>
+        <p class="text-center">A Summer Classic!<br>
           Your choice - white or wheat bun<br>
           Relis, mustard and ketchup
           Served with our house-made chips
         </p>
-        <p>$7.95</p>
+        <p class="text-center">$7.95</p>
 
-        <h3>House Salad</h3>
-        <p>On the Lighter Side<br>
+        <h3 class="text-center">House Salad</h3>
+        <p class="text-center">On the Lighter Side<br>
           Your choice - with or withou cheese<br>
           Iceberg lettuce, tomatoes, peppers<br>
           Thousand Island or Ranch Dressing<br>
           Served with a dinner roll</p>
-          <p>$6.95</p>
-        </div>
+          <p class="text-center">$6.95</p>
+      </div>
 
-        <div class="col-sm-4">
-          <h3>Italian Sausage and Peppers</h3>
-          <p>An All-Time Favorite!!<br>
+      <div class="col-sm">
+          <h3 class="text-center">Italian Sausage and Peppers</h3>
+          <p class="text-center">An All-Time Favorite!!<br>
             Your choice- mild or spicy<br>
             Cole Slaw<br>
             Served with garlic mashers<br>
           </p>
-          <p>$10.95</p>
+          <p class="text-center">$10.95</p>
 
-          <h3>Brisket Sandwich and Fries</h3>
-          <p>A Taste of Texas!<br>
+          <h3 class="text-center">Brisket Sandwich and Fries</h3>
+          <p class="text-center">A Taste of Texas!<br>
             Smoked Brisket on thic-cut Texas<br>
             Toast <br>
             Cole Slaw<br>
             Served with our famout thick-cut<br>
             french fries
-          </p>
-          <p>$7.95</p>
-        </div>
+          <p class="text-center">$7.95</p>
       </div>
-
-      <div class="col-sm-4 col-md-4 offset-md-4">
-        <table>
-          <tr>
-            <th colspan="2"> Beverages</th>
-          </tr>
-          <tr>
-            <td>Root Beer</td>
-            <td>$3.00</td>
-          </tr>
-          <tr>
-            <td>Bottle Water</td>
-            <td>$1.25</td>
-          </tr>
-          <tr>
-            <td>Lemonade</td>
-            <td>$1.00</td>
-          </tr>
-          <tr>
-            <td>Iced Tea</td>
-            <td>$1.25</td>
-          </tr>
+    </div>
+ <div class="row">
+    <table class="table-borderless align-items-center table-sm text-center">
+          <thead>
+            <th scope="col" colspan="2"> Beverages</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Root Beer</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Bottle Water</td>
+              <td>$1.25</td>
+            </tr>
+            <tr>
+              <td>Lemonade</td>
+              <td>$1.00</td>
+            </tr>
+            <tr>
+              <td>Iced Tea</td>
+              <td>$1.25</td>
+            </tr>
+          <tbody>
         </table>
 
-      </div>
-
+</div>
     </div>
-    <hr>
+
 
     <footer>
       <p>10 Platte, Denver, CO 82056</p>

@@ -1,55 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+body{ 
+  font-family: 'Roboto', sans-serif;
+  background: #e9ecef;
+}
+
+.container { 
+  background: transparent;
+}
+
 h1 {
-  font-family: Roboto;
+ 
   font-weight: bold;
   text-align: center;
+}
+
+h2 {
+  font-weight: bold;
+    font-size: 18px;
 }
 
 h3 {
   font-size: 18px;
-}
-
-a {
-  text-decoration: underline;
-}
-
-a:visited {
-  color: #444;
-}
-
-a:hover { 
   font-weight: bold;
 }
 
-a:active {
-  text-decoration: none;
+.navbar {
+  padding: 0;
 }
 
-.container-fluid {
-  background: #f4f1f1;
+.nav-pills .nav-link.active, 
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #ff7a59;
 }
 
-.container-fluid {
-  padding: 20px 0;
+.nav-pills .nav-link {
+  border-radius: 0;
 }
 
-.container-fluid > .row {
+.nav-link {
+  color: #fff;
+}
+.navbar-nav .nav-link:hover {
+    background: #ff9966;
+}
+.nav-container {
+  background: #33475b;
+  margin-bottom: 20px;
+}
+
+.nav-container .col-sm-12{ 
+  padding: 0;
+}
+
+.col.description,
+.container {
+  padding: 0;
+}
+
+.container > .row {
   padding-left: 0;
   padding-right: 0;
 }
 
+
 footer {
+  margin-top: 20px;
   font-size: smaller;
   text-align: center;
+  background: #33475b;
+  padding: 20px 0 10px 0;
+  color: #fff;
 }
 
-
-.home h2 {
-  font-size: 14px;
-}
-
-.home .description {
-  margin-top: 20px;
-  border: 1px solid #333;
+footer p:first-child {
+  margin-bottom: 0;
 }
 
 .noscript {
@@ -59,3 +85,39 @@ footer {
   text-align:center ;
   display:block ;
 }
+
+.jumbotron {
+  padding: 0;
+}
+
+.carousel .container {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.jumbotron h1 {
+  margin: 0;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 20px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1140px;
+  color: #fff;
+  background:  rgba(  255, 122, 89, 50%);
+  text-shadow: 1px 1px 6px #333;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and(max-width: 576px) {
+  .jumbotron h1 { 
+    position: static;
+    } 
+  }

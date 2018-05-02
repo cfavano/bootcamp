@@ -6,12 +6,9 @@
   <link rel="stylesheet" href="restaurantStyles.css"/>
   <style>
   #main {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
-  .button {
-    float: right;
-  }
   </style>
 </head>
 
@@ -20,10 +17,10 @@
   <div id="logo">
     <h1>Cicciotti's Restaurant</h1>
   </div>
-  <hr>
-  <div class="container-fluid">
+<div class="nav-container">
+  <div class="container">
     <div class="col-sm-12">
-      <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <nav class="navbar navbar-expand-md navbar-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -43,36 +40,36 @@
       </nav>
     </div>
   </div>
-  <hr>
+</div>
   <div id="main" class="container">
-    <div class="">
-      <div class="">
+    <div >
+      <div >
         <form action="submit.html" method="POST">
 
           <div class="form-group row">
-            <label for="name-input" class="col-sm-2 col-form-label">Name</label>
-            <div class="col-sm-10">
+            <label for="name-input" class="col-sm-3 col-form-label">Name</label>
+            <div class="col-sm-9">
               <input class="form-control" type="text" name="name">
             </div>
           </div>
 
           <div class="form-group row">
-            <label for="email-input" class="col-sm-2 col-form-label">Email</label>
-            <div class="col-sm-10">
+            <label for="email-input" class="col-sm-3 col-form-label">Email</label>
+            <div class="col-sm-9">
               <input class="form-control" type="text" name="email">
             </div>
           </div>
 
           <div class="form-group row">
-            <label for="phone-input" class="col-sm-2 col-form-label">Phone</label>
-            <div class="col-sm-10">
+            <label for="phone-input" class="col-sm-3 col-form-label">Phone</label>
+            <div class="col-sm-9">
               <input class="form-control" type="text" name="phone">
             </div>
           </div>
 
           <div class="form-group row">
-            <label for="inquiry-input" class="col-sm-2 col-form-label">Reason for Inquiry</label>
-            <div class="col-sm-10">
+            <label for="inquiry-input" class="col-sm-3 col-form-label">Reason for Inquiry</label>
+            <div class="col-sm-9">
               <select name="inquiry-reason" class="form-control">
                 <option value="Catering" checked>Catering</option>
                 <option value="Private Party">Private Party</option>
@@ -83,23 +80,23 @@
           </div>
 
           <div class="form-group row">
-            <label for="additional-input" class="col-sm-2 col-form-label">Additional information</label>
-            <div class="col-sm-10">
+            <label for="additional-input" class="col-sm-3 col-form-label">Additional information</label>
+            <div class="col-sm-9">
               <textarea class="form-control" rows="10"></textarea>
             </div>
           </div>
 
           <div class="form-group row">
-            <label for="visited-input" class="col-sm-2 col-form-label">Have you been to the restaurant?</label>
-            <div class="col-sm-10">
+            <label for="visited-input" class="col-sm-3 col-form-label">Have you been to the restaurant?</label>
+            <div class="col-sm-9">
               <input type="radio" name="visted" value="No" checked>No
               <input type="radio" name="visted" value="Yes">Yes
             </div>
           </div>
 
           <div class="form-group row">
-            <label for="contact-input" class="col-sm-2 col-form-label">  Best days to contact you:</label>
-            <div class="col-sm-10">
+            <label for="contact-input" class="col-sm-3 col-form-label">  Best days to contact you:</label>
+            <div class="col-sm-9">
              <input type="checkbox" name="contact-day" value="M">M
              <input type="checkbox" name="contact-day" value="T">T
              <input type="checkbox" name="contact-day" value="W">W
@@ -107,15 +104,12 @@
              <input type="checkbox" name="contact-day" value="F">F
            </div>
          </div>
-
-         <br>
-
-         <input type="submit" value="Send Request" class="button">
+         <input type="submit" value="Send Request" class="button float-right">
        </form>
      </div>
    </div>
  </div>
- <hr>
+
 
  <footer>
   <p>10 Platte, Denver, CO 82056</p>
