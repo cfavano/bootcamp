@@ -91,7 +91,7 @@ footer {
   text-align: center;
   background: #33475b;
   padding: 20px 0 10px 0;
-  color: rgba(255, 255, 255, 50%);
+  color: #fff  ;
 }
 
 footer p:first-child {
@@ -139,7 +139,8 @@ footer p:first-child {
 
 @media only screen and (max-width: 768px) {
   .container {
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   #logo {
     display: none;
@@ -172,4 +173,7 @@ footer p:first-child {
     font-size: 16px;
     background: #ff7a59;
   } 
+  .navbar-brand {
+    font-size: 15px;
+  }
 }
